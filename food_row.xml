@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rellist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/titleimgfood"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/titletxtfoodname"
+            android:layout_toRightOf="@id/titleimgfood"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginVertical="5dp"
+            android:text="Food Name"/>
+        <ImageView
+            android:id="@+id/imgadd"
+            android:layout_alignParentEnd="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/add"/>
+        <ImageView
+            android:id="@+id/imgminus"
+            android:layout_alignParentEnd="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/minus"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/linsublist"
+            android:layout_below="@id/titleimgfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/subtitleimgfood"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/subtitletxtfoodname"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginVertical="5dp"
+                android:text="Food Name"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
